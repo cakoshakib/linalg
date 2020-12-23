@@ -18,7 +18,7 @@ mat createMat(int n, int m) {
 }
 
 vl multMatrix(mat matrix, vl vec) {
-    vl product(2);
+    vl product(matrix.size());
     for(auto i = 0; i<matrix.size(); i++) {
         for(auto j = 0; j<matrix[i].size();j++) {
              product[i] += (matrix[i][j] * vec[j]);
